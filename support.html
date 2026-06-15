@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#7c5cff" />
+  <title>Support — Quanta</title>
+  <meta name="description" content="Help and support for Quanta, the private on-device AI chat for iPhone." />
+  <link rel="canonical" href="https://quanta.visionion.dev/support.html" />
+  <link rel="icon" type="image/png" href="/icon.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="12" r="2.2" fill="currentColor" stroke="none"/>
+            <ellipse cx="12" cy="12" rx="10" ry="4.3"/>
+            <ellipse cx="12" cy="12" rx="10" ry="4.3" transform="rotate(60 12 12)"/>
+            <ellipse cx="12" cy="12" rx="10" ry="4.3" transform="rotate(120 12 12)"/>
+          </svg>
+        </span>
+        <span class="logo-text">Quanta</span>
+      </a>
+      <div class="nav-right"><a href="/privacy.html" class="nav-link">Privacy</a></div>
+    </div>
+  </nav>
+
+  <main class="page-container">
+    <a href="/" class="back-link">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Quanta
+    </a>
+
+    <header class="page-header">
+      <h1 class="page-title">Support</h1>
+      <p class="page-subtitle">We're a tiny team and read every message.</p>
+    </header>
+
+    <div class="page-content">
+      <h2>Contact</h2>
+      <p>Email <a href="mailto:info@visionion.dev?subject=Quanta%20Support">info@visionion.dev</a> — bug reports, feature ideas, and questions all welcome.</p>
+
+      <h2>FAQ</h2>
+
+      <h3>Does Quanta work offline?</h3>
+      <p>Yes. After you download a model (or using Apple's built-in model on supported devices), Quanta works with no internet at all.</p>
+
+      <h3>Which iPhones are supported?</h3>
+      <p>iPhone on iOS 26 or later. Larger models need more RAM — Quanta shows a recommendation for each model and warns if one may be heavy for your device.</p>
+
+      <h3>Why does the first message take a moment?</h3>
+      <p>The first message after picking a model loads it into memory. After that, replies start quickly.</p>
+
+      <h3>A download looks stuck.</h3>
+      <p>Big models (several GB) take time on slower connections. The Models screen shows live download size and speed so you can confirm it's progressing. You can delete and retry a download anytime.</p>
+
+      <h3>How does the free tier work?</h3>
+      <p>You get 20 messages per day for free. A single one-time purchase unlocks unlimited messages — no subscription. Because everything runs on your device, there are no usage costs on our side.</p>
+
+      <h3>Is my data private?</h3>
+      <p>Completely. Conversations, voice, and images never leave your iPhone. See our <a href="/privacy.html">Privacy Policy</a>.</p>
+
+      <h3>How do I delete my data?</h3>
+      <p>Delete individual chats by swiping, clear everything in Settings → Privacy, or remove the app to erase all data and downloaded models.</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-copy">© <span id="year"></span> Visionion. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/support.html">Support</a>
+        <a href="https://visionion.dev/contact-us.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+  <script>const y=document.getElementById('year');if(y){y.textContent=new Date().getFullYear();}</script>
+</body>
+</html>
